@@ -7,13 +7,26 @@
   <body>
 
     <div id="ex1">
-      <h2>{{ message }}</h2>
+      <h3>Displaying a simple message</h3>
+      <label>{{ message }}</label>
     </div>
 
     <div id="ex2">
+      <h3>Show or hide an element</h3>
       <label v-if="visible">You can see me</label>
       <br>
       <label v-if="!visible">You can NOT see me</label>
+    </div>
+
+    <div id="ex3">
+      <h3>Iterate in array</h3>
+      <ul v-for="item in languages">
+        <li>{{ item }}</li>
+      </ul>
+      <h3>Iterate in object properties</h3>
+      <ul v-for="prop in person">
+        <li>{{ prop }}</li>
+      </ul>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

@@ -11,3 +11,15 @@ var ex2 = new Vue({
     visible: true
   }
 })
+
+var ex3 = new Vue({
+  el: '#ex3',
+  data: {
+    languages: ["JavaScript","Ruby","Python","PHP","Java"],
+    person: {
+      name: "MiniCoding",
+      age: 26,
+      cool: true
+    }
+  }
+})
